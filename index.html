@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Jonelbars</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar2.css">
+    <link rel="stylesheet" href="modals.css">
+
+    <!-- cdn -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- Navigation 1 -->
+    <nav>
+        <div class="logo">
+            <a href="#">@Jonelbars</a>
+        </div>
+
+        <div class="cl-toggle-switch">
+            <label class="cl-switch" for="checkbox">
+              <input type="checkbox" id="checkbox">
+              <span></span>
+            </label>
+          </div>
+          <audio id="audioPlayer" src="./assets/fullstack.mp3"></audio>
+    </nav>
+
+    <section class="home">
+        <div class="home-text">
+            <div class="heading">
+                <h1 class="typewrite" data-period="2000"
+                data-type='[ "Jonel Barrientos" ]'>Jonel Barrientos</h1>
+                <div class="title-description">
+                <div class="a">
+                    <p class="title">Front-End Developer <br>
+                        UI/UX Designer <br>
+                        WordPress Developer</p>
+                </div>
+                <p class="description">In the world of technology, the only limit is your own curiosity<br>
+                and determination to learn and grow.
+                </p>
+                </div>
+            </div>
+
+            <button>
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span class="email-me">Email Me</span>
+              </button>
+        </div>
+
+        <div class="home-images">
+            <div class="img1 img"></div>
+            <div class="img2 img"></div>
+            <div class="img3 img"></div>
+        </div>
+    </section>
+
+    <section class="overview">
+
+        <div class="card-overview">
+            <div class="quick-overview">
+                <h1>Quick Overview</h1>
+                    <div class="overview-content-container">
+                        <div class="overview-content">
+                            <i class="ph-fill ph-rocket-launch"></i>
+                            <p>Built 4 WordPress websites since 2018</p>
+                        </div>
+                        <div class="overview-content">
+                            <i class="ph-bold ph-code"></i>
+                            <p>Aspiring Full-stack Web Developer</p>
+                        </div>
+                        <div class="overview-content">
+                            <i class="ph-fill ph-figma-logo"></i>
+                            <p>Aspiring UI/UX Designer</p>
+                        </div>
+                        <div class="overview-content">
+                            <i class="ph-fill ph-laptop"></i>
+                            <p>Building simple projects since 2020</p>
+                        </div>
+                        <div class="overview-content">
+                            <i class="ph-fill ph-keyboard"></i>
+                            <p>Gained experience in Data Entry/Profiling</p>
+                        </div>
+                        <div class="overview-content">
+                            <i class="ph-fill ph-graduation-cap"></i>
+                            <p>Information Techonology at Holy Cross of Davao College</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="latest-project">
+                <h1 class="latest-project-title">Latest Project</h1>
+
+                <div class="latest-project-content">
+                    <div class="left-content">
+                        <div class="left-content-title">
+                        <h1>TARGET</h1>
+                        <p>Visual Work Management Tool</p>
+                    </div>
+
+                        <div class="tags">
+                            <p>UI/UX</p>
+                            <p>FIGMA</p>
+                            <p>ANGULAR</p>
+                            <p>DJANGO</p>
+                            <p>CSS</p>
+                            <p>TAILWIND</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <img src="./assets/overview-mockup.png" alt="Target">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="navbar-2">
+        <div class="logo2">
+            <a href="#">@Jonelbars</a>
+        </div>
+   
+        <ul>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Expertise</li>
+            <li>Services</li>
+            <li>Timeline</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+
+    <div class="nav-flex">
+        <div class="logo2">
+            <a href="#">@Jonelbars</a>
+        </div>
+
+        <div class="background">
+            <button class="menu__icon" onclick="toggleNavbar()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+    </div>
+
+    <div class="responsive-navbar" id="navbar">
+        <div class="__header">
+            <div class="logo2">
+                <a href="#">@Jonelbars</a>
+            </div>
+            <button class="close-nav" onclick="closeNavbar()">
+                <i class="ph-bold ph-x"></i></button>
+        </div>
+
+        <div class="__content">
+        <ul>
+            <li id="li1">About</li>
+            <li id="li2">Portfolio</li>
+            <li id="li3">Expertise</li>
+            <li id="li4">Services</li>
+            <li id="li5">Timeline</li>
+            <li id="li6">Contact</li>
+        </ul>
+    </div>
+    </div>
+
+
+
+
+
+
+    <section class="about">
+
+        <div class="about-top-container">
+            <div class="about-image">
+                <div class="card">
+                </div>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-content-top-container">
+                <h1>Who am I</h1>
+
+                <div class="paragraphs">
+                    <p>I am Jonel G. Barrientos 23 years old with Bachelors degree of Information Technology at the Holy Cross of Davao College.</p>
+                    <p>I find myself fascinated by technology, specially when it comes to web design or ui/ux design. This gives me urge and make me more passionate when implementing it for web base development particularly in the front - end.</p>
+                    <p>Additionally, I also have a great experience in WordPress development. Now, I'm currently devoting myself to becoming more proficient in UI/UX and web development, aiming to enhance the user experience through intuitive design and seamless functionality.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="about-bottom-container">
+            <div class="about-bottom-content">
+                <div class="about-content-container">
+                    <h1>What's my goal</h1>
+
+                    <div class="paragraphs">
+                        <p>I’m aiming a more real world experience to expand more my knowledge where I can develop my skills to the fullest and making myself comparable to a one man team.</p>
+                        <p>While I'm still at my prime age, I’m hoping to build a small businesses while doing my passion. I am also eager to contribute to a team-oriented work environment and grow my career within the company.</p>          
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-bottom-terminal">
+
+                    <aside class="custom-aside">
+                        <div class="terminal-header">
+                            <div class="flex space-x-2 custom-dots">
+                                <div class="custom-dot red"></div>
+                                <div class="custom-dot yellow"></div>
+                                <div class="custom-dot green"></div>
+                            </div>
+                            <p class="custom-lang">bash</p>
+                        </div>
+
+                        <div class="command2-terminal">
+                            <div class="custom-content">
+                                <div class="custom-user-container">
+                                <p class="custom-part1">User@DESKTOP-KJB7778</p>
+                                <p class="custom-part2">ZVCTW64</p>
+                                <p class="custom-part3">~/Desktop/Repo</p>
+                                <p class="custom-part4">(master)</p>
+                                </div>
+                                <div class="custom-user-container2">
+                                <p class="custom-command1">$ life install courage</p>
+                                <p class="custom-output">+ courage@11.7.8</p>
+                                <p class="custom-output">added 2 package, and audited 2 packages in 3s</p>
+                                <p class="custom-output"> → loading . . .</p>
+                                <div class="terminal-loading">
+                                <p class="custom-output">▋▋▋▋▋▋▋▋▋▋</p>
+                                <p>100%</p>
+                            </div>
+                            </div>                            
+                            </div>
+                            <div class="ready-command">
+                                <div class="custom-user-container">
+                                    <p class="custom-part1">User@DESKTOP-KJB7778</p>
+                                    <p class="custom-part2">ZVCTW64</p>
+                                    <p class="custom-part3">~/Desktop/Repo</p>
+                                    <p class="custom-part4">(master)</p>
+                                    </div>
+                            <p class="terminal custom-command" data-period="3000"
+                                data-type='[ "$ life install wisdom" ]'></p>
+                            </div>
+                        </div>
+                    </aside>
+        </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="parent">
+            <div class="div1">
+                <div class="div1-container">
+                        <h1>All Projects</h1>
+                    <div class="div1-paragraph">
+                        <p>Throughout my career, I have successfully completed a wide range of projects that showcase my expertise as a Front-end Developer, UI/UX Designer, and WordPress Developer.</p>
+                        <p>Each project reflects my commitment to delivering high-quality, and user-centric solutions that basically meets the quality standards</p>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="div2">
+
+                <div class="div-container" id="modalTarget" onclick="targetModal(this)">
+                    <div class="div-left-container">
+                        <div class="div-left-content">
+                            <h1 class="grid-project-title">TARGET</h1>
+                            <p>Visual Work Management Tool</p>
+                        </div>
+
+                        <div class="tags">
+                            <p>UI/UX</p>
+                            <p>FIGMA</p>
+                            <p>ANGULAR</p>
+                            <p>DJANGO</p>
+                            <p>CSS</p>
+                            <p>TAILWIND</p>
+                        </div>
+                    </div>
+                    <div class="div-right-container">
+                        <img src="./assets/overview-mockup.png" alt="Target">
+                    </div>
+                </div>
+
+                <div id="target" class="modal">
+                    <div class="modal-content modal-background-target">
+                        <!-- <span id="closeModalBtn" class="close" onclick="closeModal()">&times;</span> -->
+                    </div>
+                   
+                    <div class="modal-contents">
+                        <div id="modalText"></div>
+                        <div class="heading-content-modal">
+                            <h1>Target</h1>
+                            <div class="tags">
+                                <p>UI/UX</p>
+                                <p>FIGMA</p>
+                                <p>ANGULAR</p>
+                                <p>DJANGO</p>
+                                <p>CSS</p>
+                                <p>TAILWIND</p>
+                            </div>
+                        </div>
+                        <div class="modal-content-paragraph">
+                            <p>Target is like a Trello or Jira, a management tool that helps the teams to organize, track,
+                                and manage their projects effeciently. Target is built using angular-tailwind for the 
+                                front-end and django for the back-end. This system is developed for 
+                                <a href="https://tactivstudios.com/" target="_blank">Tactiv Studios</a>.
+                            </p>
+                            <div class="button-wrapper">
+                                <a href="" target="_blank">Source Code</a>
+                                <a href="" target="_blank">Visit Site</a>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+<!-- =========PROJECT BLOCK=========== -->
+
+            <div class="div3">
+
+                <div class="div-container" id="modalVgap" onclick="vgapModal(this)">
+                    <div class="div-left-container">
+                        <div class="div-left-content">
+                            <h1 class="grid-project-title">VA GLOBAL PARTNERS</h1>
+                            <p>Business Process Outsourcing Services</p>
+                        </div>
+
+                        <div class="tags">
+                            <p>WordPress</p>
+                            <p>CSS</p>
+                            <p>Photoshop</p>
+                            <p>FIGMA</p>
+                            <p>SEO</p>
+                        </div>
+                    </div>
+                    <div class="div-right-container">
+                        <img src="./assets/vaglobalpartners-mockup.png" alt="Target">
+                    </div>
+                </div>
+
+                <div id="vgap" class="modal">
+                    <div class="modal-content modal-background-vgap">
+                    </div>                   
+                    <div class="modal-contents">
+                        <!-- <div id="modalText"></div> -->
+                        <div class="heading-content-modal">
+                            <h1>Target</h1>
+                            <div class="tags">
+                                <p>UI/UX</p>
+                                <p>FIGMA</p>
+                                <p>ANGULAR</p>
+                                <p>DJANGO</p>
+                                <p>CSS</p>
+                                <p>TAILWIND</p>
+                            </div>
+                        </div>
+                        <div class="modal-content-paragraph">
+                            <p>asdasdasdasdasdasdasdasdasdr 
+                                <a href="https://tactivstudios.com/" target="_blank">Tactiv Studios</a>.
+                            </p>
+                            <div class="button-wrapper">
+                                <a href="" target="_blank">Source Code</a>
+                                <a href="" target="_blank">Visit Site</a>                       
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+
+            </div>
+
+<!-- =========PROJECT BLOCK=========== -->
+
+            <div class="div4">
+
+                <div class="div-container" id="modalProfilead" onclick="profileadModal(this)">
+                    <div class="div-left-container">
+                        <div class="div-left-content">
+                            <h1 class="grid-project-title">PROFILEAD</h1>
+                            <p>B2B Lead Generation Services</p>
+                        </div>
+
+                        <div class="tags">
+                            <p>WordPress</p>
+                            <p>CSS</p>
+                            <p>UI/UX</p>
+                            <p>FIGMA</p>
+                            <p>Photoshop</p>
+                            <p>SEO</p>
+                        </div>
+                    </div>
+                    <div class="div-right-container">
+                        <img src="./assets/profilead-mockup.png" alt="Target">
+                    </div>
+                </div>
+                <div id="profilead" class="modal">
+                    <div class="modal-content modal-background-profilead">
+                    </div>                   
+                    <div class="modal-contents">
+                        <!-- <div id="modalText"></div> -->
+                        <div class="heading-content-modal">
+                            <h1>Target</h1>
+                            <div class="tags">
+                                <p>UI/UX</p>
+                                <p>FIGMA</p>
+                                <p>ANGULAR</p>
+                                <p>DJANGO</p>
+                                <p>CSS</p>
+                                <p>TAILWIND</p>
+                            </div>
+                        </div>
+                        <div class="modal-content-paragraph">
+                            <p>asdasdasdasdasdasdasdasdasdr 
+                                <a href="https://tactivstudios.com/" target="_blank">Tactiv Studios</a>.
+                            </p>
+                            <div class="button-wrapper">
+                                <a href="" target="_blank">Source Code</a>
+                                <a href="" target="_blank">Visit Site</a>                       
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+
+            </div>
+
+<!-- =========PROJECT BLOCK=========== -->
+
+            <div class="div5">
+
+                <div class="div-container" id="modalKryscorp" onclick="kryscorpModal(this)">
+                    <div class="div-left-container">
+                        <div class="div-left-content">
+                            <h1 class="grid-project-title">KRYSCORP</h1>
+                            <p>Diversified Conglomerate</p>
+                        </div>
+
+                        <div class="tags">
+                            <p>WordPress</p>
+                            <p>CSS</p>
+                            <p>UI/UX</p>
+                            <p>FIGMA</p>
+                            <p>Photoshop</p>
+                            <p>SEO</p>
+                        </div>
+                    </div>
+                    <div class="div-right-container">
+                        <img src="./assets/kryscorp-mockup.png" alt="Target">
+                    </div>
+                </div>
+                <div id="kryscorp" class="modal">
+                    <div class="modal-content modal-background-kryscorp">
+                    </div>                   
+                    <div class="modal-contents">
+                        <!-- <div id="modalText"></div> -->
+                        <div class="heading-content-modal">
+                            <h1>Target</h1>
+                            <div class="tags">
+                                <p>UI/UX</p>
+                                <p>FIGMA</p>
+                                <p>ANGULAR</p>
+                                <p>DJANGO</p>
+                                <p>CSS</p>
+                                <p>TAILWIND</p>
+                            </div>
+                        </div>
+                        <div class="modal-content-paragraph">
+                            <p>asdasdasdasdasdasdasdasdasdr 
+                                <a href="https://tactivstudios.com/" target="_blank">Tactiv Studios</a>.
+                            </p>
+                            <div class="button-wrapper">
+                                <a href="" target="_blank">Source Code</a>
+                                <a href="" target="_blank">Visit Site</a>                       
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+
+            </div>
+
+<!-- =========PROJECT BLOCK=========== -->
+
+            <div class="div6">
+
+                <div class="div-container" id="modalKrysearch" onclick="krysearchModal(this)">
+                    <div class="div-left-container">
+                        <div class="div-left-content">
+                            <h1 class="grid-project-title">KRYSEARCH</h1>
+                            <p>Learning Management System</p>
+                        </div>
+
+                        <div class="tags">
+                            <p>WordPress</p>
+                            <p>CSS</p>
+                            <p>UI/UX</p>
+                            <p>Photoshop</p>
+                            <p>FIGMA</p>
+                        </div>
+                    </div>
+                    <div class="div-right-container">
+                        <img src="./assets/kryscorp-mockup.png" alt="Target">
+                    </div>
+                </div>
+                <div id="krysearch" class="modal">
+                    <div class="modal-content modal-background-krysearch">
+                    </div>                   
+                    <div class="modal-contents">
+                        <!-- <div id="modalText"></div> -->
+                        <div class="heading-content-modal">
+                            <h1>Target</h1>
+                            <div class="tags">
+                                <p>UI/UX</p>
+                                <p>FIGMA</p>
+                                <p>ANGULAR</p>
+                                <p>DJANGO</p>
+                                <p>CSS</p>
+                                <p>TAILWIND</p>
+                            </div>
+                        </div>
+                        <div class="modal-content-paragraph">
+                            <p>asdasdasdasdasdasdasdasdasdr 
+                                <a href="https://tactivstudios.com/" target="_blank">Tactiv Studios</a>.
+                            </p>
+                            <div class="button-wrapper">
+                                <a href="" target="_blank">Source Code</a>
+                                <a href="" target="_blank">Visit Site</a>                       
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+
+            </div>
+            </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="global.js"></script>
+    <script src="navbar2.js"></script>
+    <script src="modals.js"></script>
+</body>
+</html>

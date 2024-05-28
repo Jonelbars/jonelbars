@@ -1,0 +1,164 @@
+.open-modal {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+}
+
+.modal {
+    display: none;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.5s;
+}
+
+.modal-content {
+    border-radius: 12px 12px 0 0;
+    position: relative; 
+    margin: 2% auto 0 auto;
+    /* border: 1px solid #888; */
+    width: 100%;
+    max-width: 700px;
+    height: 366px;
+    animation: slideIn 0.5s;
+}
+
+.modal-contents {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-16rem);
+    border-radius: 0 0 12px 12px;
+    position: relative; 
+    margin: 0 auto 2% auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    /* border: 1px solid #888; */
+    width: 100%;
+    max-width: 700px;
+    animation: slideIn 0.5s;
+}
+
+.modal-contents{
+    color: var(--bg-color-darker);
+}
+
+.modal-content-paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-16rem);
+}
+
+.modal-content-paragraph a{
+    color: #4a2b87;
+    text-decoration: none;
+}
+
+.modal-content-paragraph a:hover{
+    color: #6a24f5;
+}
+
+.modal-contents .tags{
+    max-width: 100%;
+}
+
+.heading-content-modal{
+    font-size: var(--h1);
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-16rem);
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--padding-24rem);
+}
+
+.button-wrapper a{
+    background-color: var(--bg-color-darker);
+    color: #f2f2f2;
+    padding: 8px 24px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.button-wrapper a:hover{
+    background-color: var(--bg-color-dark);
+    color: #fff;
+}
+
+.modal-background-target{
+    background-image: url("./assets/hero-sections/target-hero.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+}
+
+.modal-background-vgap{
+    background-image: url("./assets/hero-sections/vgap-hero.PNG");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+}
+
+.modal-background-profilead{
+    background-image: url("./assets/hero-sections/profilead-hero.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+}
+
+.modal-background-kryscorp{
+    background-image: url("./assets/hero-sections/kryscorp-hero.PNG");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+}
+
+.modal-background-krysearch{
+    background-image: url("./assets/hero-sections/krysearch-hero.PNG");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
