@@ -4,27 +4,46 @@ function targetModal(element) {
     // modalText.textContent = element.getAttribute('data-modal-content');
     modal1.style.display = 'block';
 }
+function targetcloseModal(element) {
+    var modal1 = document.getElementById('target');
+    modal1.style.display = 'none';
+}
 
 function vgapModal(element) {
     var modal2 = document.getElementById('vgap');
     modal2.style.display = 'block';
+}
+function vgapcloseModal(element) {
+    var modal2 = document.getElementById('vgap');
+    modal2.style.display = 'none';
 }
 
 function profileadModal(element) {
     var modal3 = document.getElementById('profilead');
     modal3.style.display = 'block';
 }
+function profileadcloseModal(element) {
+    var modal3 = document.getElementById('profilead');
+    modal3.style.display = 'none';
+}
 
 function kryscorpModal(element) {
     var modal4 = document.getElementById('kryscorp');
     modal4.style.display = 'block';
+}
+function kryscorpcloseModal(element) {
+    var modal4 = document.getElementById('kryscorp');
+    modal4.style.display = 'none';
 }
 
 function krysearchModal(element) {
     var modal5 = document.getElementById('krysearch');
     modal5.style.display = 'block';
 }
-
+function krysearchcloseModal(element) {
+    var modal5 = document.getElementById('krysearch');
+    modal5.style.display = 'none';
+}
 
 
 

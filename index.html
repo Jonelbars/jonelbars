@@ -38,8 +38,12 @@
                 <div class="title-description">
                 <div class="a">
                     <p class="title">Front-End Developer <br>
-                        UI/UX Designer <br>
-                        WordPress Developer</p>
+                        WordPress Developer<br>
+                        UI/UX Design<br>
+                        Web Design<br>
+                        Logo Design<br>
+                        Graphic Design<br>
+                    </p>
                 </div>
                 <p class="description">In the world of technology, the only limit is your own curiosity<br>
                 and determination to learn and grow.
@@ -133,12 +137,12 @@
         </div>
    
         <ul>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Expertise</li>
-            <li>Services</li>
-            <li>Timeline</li>
-            <li>Contact</li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Expertise</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Timeline</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
 
     </div>
@@ -183,7 +187,7 @@
 
 
 
-    <section class="about">
+    <section class="about" id="about">
 
         <div class="about-top-container">
             <div class="about-image">
@@ -302,8 +306,12 @@
                 </div>
 
                 <div id="target" class="modal">
+                    <div class="modal-wrapper">
+                        <div>
                     <div class="modal-content modal-background-target">
-                        <!-- <span id="closeModalBtn" class="close" onclick="closeModal()">&times;</span> -->
+                        <span class="close-btn" id="targetClose" onclick="targetcloseModal(this)">
+                            &times;
+                        </span>
                     </div>
                    
                     <div class="modal-contents">
@@ -331,6 +339,7 @@
                             </div>
                         </div>
                     </div>
+                </div></div>
                 </div>
 
             </div>
@@ -360,7 +369,12 @@
                 </div>
 
                 <div id="vgap" class="modal">
+                    <div class="modal-wrapper">
+                        <div>
                     <div class="modal-content modal-background-vgap">
+                        <span class="close-btn" id="vgapClose" onclick="vgapcloseModal(this)">
+                            &times;
+                        </span>
                     </div>                   
                     <div class="modal-contents">
                         <!-- <div id="modalText"></div> -->
@@ -384,7 +398,9 @@
                                 <a href="" target="_blank">Visit Site</a>                       
                             </div>
                         </div>
-                    </div>          
+                    </div>
+                </div>
+            </div>          
                 </div>
 
             </div>
@@ -414,10 +430,13 @@
                     </div>
                 </div>
                 <div id="profilead" class="modal">
+                    <div class="modal-wrapper"><div>
                     <div class="modal-content modal-background-profilead">
+                        <span class="close-btn" id="profileadClose" onclick="profileadcloseModal(this)">
+                            &times;
+                        </span>
                     </div>                   
                     <div class="modal-contents">
-                        <!-- <div id="modalText"></div> -->
                         <div class="heading-content-modal">
                             <h1>Target</h1>
                             <div class="tags">
@@ -438,7 +457,9 @@
                                 <a href="" target="_blank">Visit Site</a>                       
                             </div>
                         </div>
-                    </div>          
+                    </div>  
+                </div>
+            </div>        
                 </div>
 
             </div>
@@ -468,7 +489,11 @@
                     </div>
                 </div>
                 <div id="kryscorp" class="modal">
+                    <div class="modal-wrapper"><div>
                     <div class="modal-content modal-background-kryscorp">
+                        <span class="close-btn" id="kryscorpClose" onclick="kryscorpcloseModal(this)">
+                            &times;
+                        </span>
                     </div>                   
                     <div class="modal-contents">
                         <!-- <div id="modalText"></div> -->
@@ -492,7 +517,9 @@
                                 <a href="" target="_blank">Visit Site</a>                       
                             </div>
                         </div>
-                    </div>          
+                    </div> 
+                </div>
+            </div>         
                 </div>
 
             </div>
@@ -520,8 +547,13 @@
                         <img src="./assets/kryscorp-mockup.png" alt="Target">
                     </div>
                 </div>
+
                 <div id="krysearch" class="modal">
+                    <div class="modal-wrapper"><div>
                     <div class="modal-content modal-background-krysearch">
+                        <span class="close-btn" id="krysearchClose" onclick="krysearchcloseModal(this)">
+                            &times;
+                        </span>
                     </div>                   
                     <div class="modal-contents">
                         <!-- <div id="modalText"></div> -->
@@ -545,11 +577,64 @@
                                 <a href="" target="_blank">Visit Site</a>                       
                             </div>
                         </div>
-                    </div>          
+                    </div>   
+                </div>
+            </div>       
                 </div>
 
             </div>
             </div>
+    </section>
+
+    <div class="clip-svg">
+        <div class="svg"></div>
+    </div>
+
+    <!-- =================EXPERTISE================ -->
+
+    <section class="expertise">
+        <h1 class="expertise-title">My Expertise</h1>
+
+        <div class="expertise-container">
+            <h1 class="webdev-title">Web Development</h1>
+            <div class="web-development">     
+                <div class="html stack-hover">
+                    <img src="./assets/logos/html.png" alt="html">
+                    <h1>HTML</h1>
+                </div>
+                <div class="css stack-hover">
+                    <img src="./assets/logos/css.png" alt="css">
+                    <h1>CSS</h1>
+                </div>
+                <div class="javascript stack-hover">
+                    <img src="./assets/logos/javascript.png" alt="javascript">
+                    <h1>Javascript</h1>
+                </div>
+                <div class="angular stack-hover">
+                    <img src="./assets/logos/angular.png" alt="angular" >
+                    <h1>Angular</h1>
+                </div>
+                <div class="sass stack-hover">
+                    <img src="./assets/logos/sass.png" alt="sass">
+                    <h1>Sass</h1>
+                </div>
+                <div class="tailwind stack-hover">
+                    <img src="./assets/logos/tailwind.png" alt="tailwind">
+                    <h1>Tailwind</h1>
+                </div>
+                <div class="bootstrap stack-hover">
+                    <img src="./assets/logos/bootstrap.png" alt="bootstrap">
+                    <h1>Bootstrap</h1>
+                </div>
+            </div>
+            <div class="wordpress">
+                <div class="elementor"></div>
+            </div>
+            <div class="uiux-design"></div>
+            <div class="web-design"></div>
+            <div class="logo-design"></div>
+            <div class="graphic-design"></div>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

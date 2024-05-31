@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+
     --font-family-primary: 'Poppins', sans-serif;
     --font-family-secondary: 'Bowlby One SC', sans-serif;
 
@@ -266,6 +269,8 @@ nav{
   font-size: 18px;
   max-width: 100%;
   color: var(--font-color-dark);
+  display: flex;
+  flex-direction: column;
 }
 
 .title-description .a{
@@ -276,24 +281,43 @@ nav{
 
 .title-description .title{
   display: block;
-  animation: moveUp 8s infinite;
+  animation: moveUp 13s infinite;
 }
 
 @keyframes moveUp{
   0%{
       transform: translateY(0);
+      /* fontend */
   }
 
-  25%{
+  16.67%{
+      transform: translateY(-17%);
+      /* wordpress */
+  }
+
+  33.33%{
       transform: translateY(-33%);
+      /* uiux */
   }
 
   50%{
-      transform: translateY(-66%);
-  }
+    transform: translateY(-50%);
+    /* webdesign */
+}
+
+66.67%{
+  transform: translateY(-67%);
+  /* logodesign */
+}
+
+83.33%{
+  transform: translateY(-84%);
+  /* logodesign */
+}
 
   100%{
       transform: translateY(0);
+      /* graphicdesign */
   }
 }
 
@@ -648,14 +672,23 @@ button:active {
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
-  color: var(--gray-25);
   font-size: var(--XLarge); 
 }
+
+.navbar-2 ul a{
+  text-decoration: none;
+  color: var(--gray-25);
+}
+
+/* 
+#about{
+  height: 100px;
+} */
 
 
 .about{
   gap: var(--padding-90rem);
-  padding-block: 9rem;
+  padding-block: var(--padding-90rem);
   display: flex;
   flex-direction: column;
   gap: 9rem;
@@ -885,6 +918,7 @@ button:active {
   background-color: var(--bg-color-darker);
   padding-block: var(--padding-90rem);
 }
+
 .parent {
   font-family: var(--font-family-primary);
   display: grid;
@@ -972,8 +1006,115 @@ button:active {
   cursor: pointer;
 }
 
+.clip-svg{
+  outline: none;
+  height: 5rem;
+}
+.svg{
+  background-color: var(--bg-color-darker);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  height: 100%;
+  width: 100%;
+  margin-top: -2px;
+}
 
+.expertise{
+  padding-block: var(--padding-90rem);
+  font-family: var(--font-family-primary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-90rem);
+}
 
+.expertise-container{
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-24rem);
+}
+
+.webdev-title{
+  font-size: var(--h1);
+  font-weight: var(--bold);
+  color: var(--bg-color-darker);
+}
+
+.web-development{
+  display: flex;
+  gap: var(--padding-24rem);
+  flex-wrap: wrap;
+}
+
+.expertise-title{
+  text-align: center;
+  font-size: var(--padding-48rem);
+  font-weight: var(--black-weight);
+  color: var(--bg-color-darker);
+}
+
+.web-development img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 64px;
+}
+
+.web-development h1{
+  font-size: var(--Base);
+  font-weight: var(--regular);
+  color: #f2f2f2;
+}
+
+.html, .css, .javascript, .angular,
+.sass, .tailwind, .bootstrap{
+  background-color: var(--bg-color-darker);
+  border-radius: 12px;
+  max-height: 146px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-16rem);
+  padding: var(--padding-24rem) var(--padding-40rem);
+}
+
+.stack-hover{
+  transition: all 0.5s ease-out;
+}
+
+.stack-hover:hover{
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 30px 20px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 30px 20px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 30px 20px -8px rgba(0, 0, 0, 0.75);
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+  transition: all 0.2s ease-out;
+}
+
+.stack-hover img{
+  transition: all 0.2s ease-out;
+}
+
+.stack-hover:hover img{
+  transition: all 0.2s ease-out;
+  transform: scale(1.6) translateY(-20px);
+  width: 55px;
+}
+
+/* .stack-hover h1{
+  transition: all 0.2s ease-out;
+}
+
+.stack-hover:hover h1{
+  transition: all 0.2s ease-out;
+  transform: scale(1.5) translateY(-10px);
+} */
 
 
 @media only screen and (max-width: 768px) {
@@ -1060,7 +1201,7 @@ button:active {
   /* =======ABOUT========== */
   .about{
     padding-inline: var(--padding-16rem);
-    padding-block: var(--padding-90rem);
+    padding-block: 10rem;
 
     gap: var(--padding-90rem);
   

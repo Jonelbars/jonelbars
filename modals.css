@@ -136,6 +136,18 @@
    background-position: top;
 }
 
+.close-btn{
+    float: right;
+    color: #f2f2f2;
+    font-size: var(--padding-24rem);
+    padding: .5rem 1rem 0 0;
+}
+
+.close-btn:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
 .close {
     position: absolute;
     top: 10px;
@@ -161,4 +173,33 @@
 @keyframes slideIn {
     from { transform: translateY(-50px); }
     to { transform: translateY(0); }
+}
+
+@media only screen and (max-width: 768px) { 
+
+    .modal{
+        padding: 1rem;
+        
+    }
+    .modal-content {
+        margin: 0;
+        width: 100%;
+        max-width: 700px;
+        height: 50%;
+        top: 0;
+        left: 0;
+    }
+    
+    .modal-contents {
+        margin: 0;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .modal-wrapper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }

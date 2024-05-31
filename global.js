@@ -1,4 +1,12 @@
-
+if (!sessionStorage.getItem('refreshed')) {
+  // Set a timeout to refresh the page after 2 seconds
+  setTimeout(() => {
+    // Set a flag in session storage to indicate the page has been refreshed
+    sessionStorage.setItem('refreshed', 'true');
+    // Refresh the page
+    location.reload();
+  }, 2000); // 2000 milliseconds = 2 seconds
+}
 // =====================TYPEWRITE =====================
 
 var TxtType = function(el, toRotate, period) {
