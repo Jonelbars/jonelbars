@@ -5,7 +5,7 @@ if (!sessionStorage.getItem('refreshed')) {
     sessionStorage.setItem('refreshed', 'true');
     // Refresh the page
     location.reload();
-  }, 2000); // 2000 milliseconds = 2 seconds
+  }, 1000); // 2000 milliseconds = 2 seconds
 }
 // =====================TYPEWRITE =====================
 
