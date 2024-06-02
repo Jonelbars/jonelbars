@@ -254,7 +254,7 @@ nav{
   width: 100%;
   padding-inline: 3rem;
   padding-top: var(--padding-30rem);
-  padding-bottom: 20rem;
+  /* padding-bottom: 20rem; */
 }
 
 .home-text .heading{
@@ -272,7 +272,7 @@ nav{
 }
 
 .title-description .a{
-    height: 27px;
+    height: 29px;
     overflow: hidden;
 }
 
@@ -463,12 +463,12 @@ button:active {
   100%   { transform: translate(0, -0px); }    
 }
 
-.home-images::before{
+/* .home-images::before{
   content: "";
   position: absolute;
   background: var(--bg-color-dark);
   width: 20rem;
-  height: 15px; /*default 20px*/
+  height: 15px;
   bottom: 50px;
   margin-right: 2rem;
   filter: blur(14px);
@@ -476,7 +476,34 @@ button:active {
   animation: 2.5s shadow;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
+} */
+
+.home-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
+.shadow-container{
+  margin-bottom: 20rem;
+  width: 100%;
+  padding-right: 130px;
+  /* height: 50px; */
+}
+
+.hero-shadow{
+  float: right;
+  max-width: 50%;
+  background: var(--bg-color-dark);
+  width: 20rem;
+  height: 15px;
+  filter: blur(14px);
+  border-radius: 100%;
+  animation: 2.5s shadow;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+
 
 @keyframes shadow {
 	0% {
@@ -1211,8 +1238,18 @@ i.ph-pencil{
   color: #eb2fb3;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-shadow{
+    margin-right: 0 !important;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
+
+  .hero-shadow{
+    display: none;
+  }
 
   nav{
     padding-inline: var(--padding-16rem);
