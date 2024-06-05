@@ -1704,6 +1704,61 @@ i.ph-pencil{
   transition: all .2s;
 }
 
+/* ============FOOTER========================= */
+
+
+
+
+
+
+
+
+
+footer{
+  padding-block: var(--padding-90rem);
+  padding-inline: var(--padding-48rem);
+  background-color: var(--bg-color-darker);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-24rem);
+  text-align: center;
+}
+
+.footer-block-1{
+  display: flex;
+  gap: var(--padding-24rem);
+  justify-content: center;
+}
+
+.footer-block-1 a,
+.footer-block-1 p{
+  color: #f2f2f2;
+}
+
+.footer-block-1 a{
+  text-decoration: none;
+}
+
+.footer-block-2{
+  display: flex;
+  gap: var(--padding-20rem);
+  justify-content: center;
+}
+
+.footer-block-2 a{
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: var(--XLarge);
+}
+
+.footer-block-3{
+  color: #f2f2f2;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 1024px) {
   .hero-shadow{
@@ -1993,5 +2048,12 @@ i.ph-pencil{
     justify-content: center;
   }
 
-  
+  footer{
+    gap: ;
+  }
+
+  .footer-block-1{
+    flex-direction: column;
+    gap: var(--padding-4rem);
+  }
 }
